@@ -1,0 +1,6 @@
+framework module Pods_MAPD714_Calculator {
+  umbrella header "Pods-MAPD714-Calculator-umbrella.h"
+
+  export *
+  module * { export * }
+}
