@@ -11,16 +11,14 @@ import Pastel
 import RevealingSplashView
 
 class ViewController: UIViewController {
-    // OUTLETS
     @IBOutlet weak var resultField: UILabel!
-    @IBOutlet weak var equationFiels: UILabel!
-    
-    //VARIABLES
+    @IBOutlet weak var equationField: UILabel!
     var firstOperand = ""
     var secondOperand = ""
     var op = ""
-    var isOperation = false
-    
+    var isSecond = false
+    var isDecimal = true
+    var secondFirstOperand = ""
     
 /*********************************************************************************************************/
     override func viewDidLoad() {
@@ -28,10 +26,8 @@ class ViewController: UIViewController {
         
         //Initialize Background Floating Gradient (Pastel)
         initializePastel()
-        
         //Initialize a revealing Splash
         let revealingSplashView = RevealingSplashView(iconImage: UIImage(named: "appLogo")!,iconInitialSize: CGSize(width: 170, height: 170), backgroundColor: UIColor(red:156/255, green:39/255, blue:176/255, alpha:1.0))
-        
         //Adds the revealing splash view as a sub view
         self.view.addSubview(revealingSplashView)
         revealingSplashView.animationType = SplashAnimationType.popAndZoomOut
@@ -47,61 +43,86 @@ class ViewController: UIViewController {
 /*  CASE1: NUMBER PRESSED ************************************************************
     */
     @IBAction func numbersPressed(_ sender: UIButton) {
-        let number = sender.titleLabel?.text
-        if(!isOperation){
-            firstOperand = firstOperand + number!
-        } else {
-            secondOperand = secondOperand + number!
+        if isSecond && secondOperand == "" {
+            resultField.text = ""
         }
-        resultField.text = resultField.text! + number!
+        let number = sender.titleLabel?.text
+        if number == "." {
+            if isDecimal == true {
+                resultField.text = resultField.text! + number!
+                isDecimal = false
+            } else {
+                resultField.text = resultField.text!
+            }
+        } else {
+            if(!isSecond){
+                firstOperand = firstOperand + number!
+            } else {
+                secondOperand = secondOperand + number!
+            }
+            resultField.text = resultField.text! + number!
+        }
     }
     
 /*  CASE2: OPERATION PRESSED ************************************************************
      */
     @IBAction func operationPressed(_ sender: UIButton) {
         let operation = sender.titleLabel?.text
-        switch operation {
-        case "-","+","x","/","%":
-            op = operation!
-            isOperation = true
-        default:
-            resultField.text = "0"
+        op = operation!
+        equationField.text = op
+        isSecond = true
+        if firstOperand != "" && isSecond && secondOperand != "" {
+            firstOperand = resultField.text!
+            secondOperand = ""
         }
+        secondFirstOperand = firstOperand
+        isDecimal = true
+        isSecond = true
+        resultField.text = firstOperand
     }
     
 /*  CASE3: EQUALS BUTTON PRESSED ************************************************************
      */
     @IBAction func calculatePress(_ sender: UIButton) {
-        switch op {
-        case "+":
-            resultField.text = String(Double(firstOperand)! + Double(firstOperand)!)
-            firstOperand = resultField.text!
-            secondOperand = ""
-        case "-":
-            resultField.text = String(Double(firstOperand)! - Double(firstOperand)!)
-            firstOperand = resultField.text!
-            secondOperand = ""
-        case "x":
-            resultField.text = String(Double(firstOperand)! * Double(firstOperand)!)
-            firstOperand = resultField.text!
-            secondOperand = ""
-        case "/":
-            resultField.text = String(Double(firstOperand)! / Double(firstOperand)!)
-            firstOperand = resultField.text!
-            secondOperand = ""
-        default:
-            resultField.text = "0"
+        equationField.text = ""
+        if firstOperand != "" && isSecond == true {
+            if secondOperand != "" {
+                switch op {
+                case "+":
+                    resultField.text = String(Double(firstOperand)! + Double(secondOperand)!)
+                    firstOperand = resultField.text!
+                    secondOperand = ""
+                case "-":
+                    resultField.text = String(Double(firstOperand)! - Double(secondOperand)!)
+                    firstOperand = resultField.text!
+                    secondOperand = ""
+                case "x":
+                    resultField.text = String(Double(firstOperand)! * Double(secondOperand)!)
+                    firstOperand = resultField.text!
+                    secondOperand = ""
+                case "/":
+                    resultField.text = String(Double(firstOperand)! / Double(secondOperand)!)
+                    firstOperand = resultField.text!
+                    secondOperand = ""
+                default:
+                    resultField.text = ""
+                }
+            } else {
+                secondOperand = secondFirstOperand
+            }
+        
         }
     }
     
 /*  CASE4: CLEAR PRESSED ************************************************************
      */
     @IBAction func clearPressed(_ sender: UIButton) {
+        equationField.text = ""
         firstOperand = ""
         secondOperand = ""
         op = ""
-        isOperation = false
-        resultField.text = "0"
+        isSecond = false
+        resultField.text = ""
     }
     
 /*********************************************************************************************/

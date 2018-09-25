@@ -270,7 +270,7 @@
                                                     </stackView>
                                                 </subviews>
                                             </stackView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="23" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eCz-0k-WBa">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eCz-0k-WBa">
                                                 <rect key="frame" x="8" y="17" width="359" height="244"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="244" id="TOb-yN-cxw"/>
@@ -279,7 +279,7 @@
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12 - 11 + 56" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TSs-l2-8h6">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TSs-l2-8h6">
                                                 <rect key="frame" x="8" y="269" width="359" height="71"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="71" id="tOR-BS-ucQ"/>
@@ -330,7 +330,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="equationFiels" destination="TSs-l2-8h6" id="3Sf-KH-Tj1"/>
+                        <outlet property="equationField" destination="TSs-l2-8h6" id="3Sf-KH-Tj1"/>
                         <outlet property="resultField" destination="eCz-0k-WBa" id="jI5-Ph-UA4"/>
                     </connections>
                 </viewController>
