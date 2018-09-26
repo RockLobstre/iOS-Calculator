@@ -33,6 +33,8 @@ class ViewController: UIViewController {
         revealingSplashView.animationType = SplashAnimationType.popAndZoomOut
             //Starts animation
         revealingSplashView.startAnimation(){}
+        
+        resultField.text = "0"
     }
     
     //handle orientaion changes
@@ -43,14 +45,27 @@ class ViewController: UIViewController {
 /*  CASE1: NUMBER PRESSED ************************************************************
     */
     @IBAction func numbersPressed(_ sender: UIButton) {
+        let number = sender.titleLabel?.text
+        if firstOperand == "" {
+            resultField.text = ""
+        }
+        if number == "0" && resultField.text == "0" {
+            return
+        }
         if isSecond && secondOperand == "" {
             resultField.text = ""
         }
-        let number = sender.titleLabel?.text
         if number == "." {
             if isDecimal == true {
                 resultField.text = resultField.text! + number!
                 isDecimal = false
+                if isSecond {
+                    secondOperand = secondOperand + number!
+                }
+                    //first number is saved
+                else{
+                    firstOperand = firstOperand + number!
+                }
             } else {
                 resultField.text = resultField.text!
             }
@@ -69,16 +84,28 @@ class ViewController: UIViewController {
     @IBAction func operationPressed(_ sender: UIButton) {
         let operation = sender.titleLabel?.text
         op = operation!
-        equationField.text = op
-        isSecond = true
-        if firstOperand != "" && isSecond && secondOperand != "" {
+        switch op {
+        case "%":
+            resultField.text = String(Double(firstOperand)! / 100)
             firstOperand = resultField.text!
             secondOperand = ""
-        }
-        secondFirstOperand = firstOperand
-        isDecimal = true
-        isSecond = true
-        resultField.text = firstOperand
+        default:
+            if resultField.text == "0" || resultField.text == ""{
+                resultField.text = "0"
+            } else {
+                equationField.text = op
+                isSecond = true
+                if firstOperand != "" && isSecond && secondOperand != "" {
+                    self.calculatePress(UIButton())
+                    firstOperand = resultField.text!
+                    secondOperand = ""
+                }
+                secondFirstOperand = firstOperand
+                isDecimal = true
+                isSecond = true
+                resultField.text = firstOperand
+            }        }
+        
     }
     
 /*  CASE3: EQUALS BUTTON PRESSED ************************************************************
@@ -89,23 +116,27 @@ class ViewController: UIViewController {
             if secondOperand != "" {
                 switch op {
                 case "+":
+                    isDecimal = true
                     resultField.text = String(Double(firstOperand)! + Double(secondOperand)!)
                     firstOperand = resultField.text!
                     secondOperand = ""
                 case "-":
+                    isDecimal = true
                     resultField.text = String(Double(firstOperand)! - Double(secondOperand)!)
                     firstOperand = resultField.text!
                     secondOperand = ""
                 case "x":
+                    isDecimal = true
                     resultField.text = String(Double(firstOperand)! * Double(secondOperand)!)
                     firstOperand = resultField.text!
                     secondOperand = ""
                 case "/":
+                    isDecimal = true
                     resultField.text = String(Double(firstOperand)! / Double(secondOperand)!)
                     firstOperand = resultField.text!
                     secondOperand = ""
                 default:
-                    resultField.text = ""
+                    resultField.text = "0"
                 }
             } else {
                 secondOperand = secondFirstOperand
@@ -122,7 +153,9 @@ class ViewController: UIViewController {
         secondOperand = ""
         op = ""
         isSecond = false
-        resultField.text = ""
+        isDecimal = true
+        resultField.text = "0"
+        secondFirstOperand = ""
     }
     
 /*********************************************************************************************/
