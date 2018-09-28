@@ -1,5 +1,5 @@
 PODS:
-  - Pastel (0.4.0)
+  - Pastel (0.5.1)
   - RevealingSplashView (0.5.0)
 
 DEPENDENCIES:
@@ -12,7 +12,7 @@ SPEC REPOS:
     - RevealingSplashView
 
 SPEC CHECKSUMS:
-  Pastel: 7fa5e26123b3dbe11f7ed255654bf37100b199a5
+  Pastel: b3dd5b8d612dac06ae7c63c97c45c900829bc139
   RevealingSplashView: 0794eecad3a8983ac11a1fe474e9a9b51b926780
 
 PODFILE CHECKSUM: edf72b9af6a50fce83a425781ee64622525e97ec

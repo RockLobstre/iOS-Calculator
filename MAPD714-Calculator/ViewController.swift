@@ -31,7 +31,7 @@ class ViewController: UIViewController {
         //Adds the revealing splash view as a sub view
         self.view.addSubview(revealingSplashView)
         revealingSplashView.animationType = SplashAnimationType.popAndZoomOut
-            //Starts animation
+        //Starts animation
         revealingSplashView.startAnimation(){}
         
         resultField.text = "0"
@@ -52,9 +52,11 @@ class ViewController: UIViewController {
         if number == "0" && resultField.text == "0" {
             return
         }
+        //clear the result field if it's time for second number
         if isSecond && secondOperand == "" {
             resultField.text = ""
         }
+        //decimal number
         if number == "." {
             if isDecimal == true {
                 resultField.text = resultField.text! + number!
@@ -62,13 +64,15 @@ class ViewController: UIViewController {
                 if isSecond {
                     secondOperand = secondOperand + number!
                 }
-                    //first number is saved
+                //first number is saved
                 else{
                     firstOperand = firstOperand + number!
                 }
+            //avoid pressing '.' anymore
             } else {
                 resultField.text = resultField.text!
             }
+        //regular number
         } else {
             if(!isSecond){
                 firstOperand = firstOperand + number!
@@ -87,6 +91,10 @@ class ViewController: UIViewController {
         switch op {
         case "%":
             resultField.text = String(Double(firstOperand)! / 100)
+            firstOperand = resultField.text!
+            secondOperand = ""
+        case "+/-":
+            resultField.text = String(-1 * Double(firstOperand)!)
             firstOperand = resultField.text!
             secondOperand = ""
         default:
@@ -160,7 +168,7 @@ class ViewController: UIViewController {
     
 /*********************************************************************************************/
     func initializePastel() {
-        let pastelView = PastelView(frame: view.bounds)
+        let pastelView = PastelView(frame: CGRect(origin: CGPoint(x: 0, y: 0), size: CGSize(width: 1000, height: 1000)))
         
         //MARK: -  Custom Direction
         pastelView.startPastelPoint = .bottomLeft
