@@ -168,7 +168,7 @@ class ViewController: UIViewController {
     
 /*********************************************************************************************/
     func initializePastel() {
-        let pastelView = PastelView(frame: CGRect(origin: CGPoint(x: 0, y: 0), size: CGSize(width: 1000, height: 1000)))
+        let pastelView = PastelView(frame: CGRect(origin: CGPoint(x: 0, y: 0), size: CGSize(width: 1500, height: 1500)))
         
         //MARK: -  Custom Direction
         pastelView.startPastelPoint = .bottomLeft
