@@ -13,6 +13,8 @@
 		2CA0DB0E21540D5C00600405 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CA0DB0C21540D5C00600405 /* Main.storyboard */; };
 		2CA0DB1021540D5E00600405 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CA0DB0F21540D5E00600405 /* Assets.xcassets */; };
 		2CA0DB1321540D5E00600405 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CA0DB1121540D5E00600405 /* LaunchScreen.storyboard */; };
+		2CC5B101217BD009009ABD96 /* ScentificViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC5B100217BD009009ABD96 /* ScentificViewController.swift */; };
+		2CC5B103217BE2A4009ABD96 /* OptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC5B102217BE2A4009ABD96 /* OptionsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +25,8 @@
 		2CA0DB0F21540D5E00600405 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2CA0DB1221540D5E00600405 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2CA0DB1421540D5E00600405 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2CC5B100217BD009009ABD96 /* ScentificViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScentificViewController.swift; sourceTree = "<group>"; };
+		2CC5B102217BE2A4009ABD96 /* OptionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsViewController.swift; sourceTree = "<group>"; };
 		50D434BB2E9F7859DA0EEBCA /* Pods_MAPD714_Calculator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MAPD714_Calculator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6F8F1271608FFEB32858808 /* Pods-MAPD714-Calculator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MAPD714-Calculator.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MAPD714-Calculator/Pods-MAPD714-Calculator.debug.xcconfig"; sourceTree = "<group>"; };
 		CFCDAC1E7BEA16121CE5EF08 /* Pods-MAPD714-Calculator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MAPD714-Calculator.release.xcconfig"; path = "Pods/Target Support Files/Pods-MAPD714-Calculator/Pods-MAPD714-Calculator.release.xcconfig"; sourceTree = "<group>"; };
@@ -63,6 +67,8 @@
 			children = (
 				2CA0DB0821540D5C00600405 /* AppDelegate.swift */,
 				2CA0DB0A21540D5C00600405 /* ViewController.swift */,
+				2CC5B100217BD009009ABD96 /* ScentificViewController.swift */,
+				2CC5B102217BE2A4009ABD96 /* OptionsViewController.swift */,
 				2CA0DB0C21540D5C00600405 /* Main.storyboard */,
 				2CA0DB0F21540D5E00600405 /* Assets.xcassets */,
 				2CA0DB1121540D5E00600405 /* LaunchScreen.storyboard */,
@@ -189,6 +195,7 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-MAPD714-Calculator/Pods-MAPD714-Calculator-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Pastel/Pastel.framework",
+				"${BUILT_PRODUCTS_DIR}/RAMAnimatedTabBarController/RAMAnimatedTabBarController.framework",
 				"${BUILT_PRODUCTS_DIR}/RevealingSplashView/RevealingSplashView.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -196,6 +203,7 @@
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Pastel.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RAMAnimatedTabBarController.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RevealingSplashView.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -210,6 +218,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CC5B101217BD009009ABD96 /* ScentificViewController.swift in Sources */,
+				2CC5B103217BE2A4009ABD96 /* OptionsViewController.swift in Sources */,
 				2CA0DB0B21540D5C00600405 /* ViewController.swift in Sources */,
 				2CA0DB0921540D5C00600405 /* AppDelegate.swift in Sources */,
 			);

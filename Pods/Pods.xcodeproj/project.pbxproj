@@ -7,96 +7,139 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		07D256CCB0D45B575FB2630B73E9470B /* SplashAnimationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544C8F13E0C83DAD2ABC6D85CE60432B /* SplashAnimationType.swift */; };
-		190A99049394084843EFD86FFA67F8C8 /* RevealingSplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3692D0A4540F01277E5869CE5C6B2F31 /* RevealingSplashView.swift */; };
-		2BE9F7AF93979C5A2B8E38A8F7F6E981 /* Pastel-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1180B709BCF2873064A3354875EE2F77 /* Pastel-dummy.m */; };
-		3207C8EEEDEF21055B937344B17D8372 /* Pods-MAPD714-Calculator-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A9835F922EA19E471BF5FFE70F377FCA /* Pods-MAPD714-Calculator-dummy.m */; };
-		32E34F8BBB7DB64A4770808BEAAD685C /* RevealingSplashView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FDDA191734B95C2CD780E8FD9318A08B /* RevealingSplashView-dummy.m */; };
-		57872E858EFEAEEA96211227488B8C55 /* PastelLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D9603201F24F7FF53DEA51E8C2F8E95 /* PastelLabel.swift */; };
-		646D626DDFD66B719C32DF0B8A6A5F0A /* SplashAnimatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293B3832309E1454FBB33ABC932E580A /* SplashAnimatable.swift */; };
-		649FE9DC0D3C1445E94EA67E231DED9C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
-		72DC939603A9F0BBD0E8D66457236FE1 /* PastelPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4AFC2DE716B78EECDBB92B23303E99 /* PastelPoint.swift */; };
-		778821617BBBDFE4864BBCFB2A36AAEF /* RevealingSplashView.h in Headers */ = {isa = PBXBuildFile; fileRef = 62726A969276F6B4B51FFD4190251538 /* RevealingSplashView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8247B92E492D368717E318A675BC400C /* Animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 431C6448879EA982F4A0F1A3BAC6FEEE /* Animations.swift */; };
-		83545CC4977D2B3D91AA8D64D13E8D41 /* Pastel-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E36AFA8F41F02961901A4A60A174822 /* Pastel-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		94C0AACCF4767C0EB25F5C4AAA44F9AD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
-		AE114A478A24C3F749CD2AC1516C6007 /* PastelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ADA44CF937F5694F41FBD72EB126F57 /* PastelView.swift */; };
-		B8B35189B852A758126664957691B9C7 /* Pods-MAPD714-Calculator-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 410BA53382234637094D7DD461F564B7 /* Pods-MAPD714-Calculator-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BD08ADD7673A97EC6623B2789B7274CC /* PastelGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A5FC751133E16C02EA06E9EB1FDCF3 /* PastelGradient.swift */; };
+		00F2AF770E9096668263E14BE97C5D17 /* RAMBounceAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B18FF4532C569BF8BC5D092CAFDB67 /* RAMBounceAnimation.swift */; };
+		091BE77297FA1442A7318088099BC8F6 /* RAMTransitionItemAnimations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846AB44F2ABEC6E0E27C4D0EA7CCF2A4 /* RAMTransitionItemAnimations.swift */; };
+		210754AA67F3BE5D2220DD3EB140B327 /* RevealingSplashView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 57FB76256D0AF82414AEA7FF9DBE8C45 /* RevealingSplashView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2B64D2CF764CD063F979CFDE2E61253E /* Pods-MAPD714-Calculator-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 410BA53382234637094D7DD461F564B7 /* Pods-MAPD714-Calculator-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2BE9F7AF93979C5A2B8E38A8F7F6E981 /* Pastel-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 72624943C8B7E66CABBB3AC2D37C9A3F /* Pastel-dummy.m */; };
+		3721F86B423099465EF55F50AA03BBC7 /* RevealingSplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFB547D5597D77DF489F6080B86BD10 /* RevealingSplashView.swift */; };
+		5604C2ADAF82791ACD26AD557CE6FB95 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		57872E858EFEAEEA96211227488B8C55 /* PastelLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195EB12BF60B267F3BB931A08FDE7B73 /* PastelLabel.swift */; };
+		5B25AAC94B152ADDA3D787C8A5790C06 /* SplashAnimatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D060096331FD308CC588A0D265D1BC90 /* SplashAnimatable.swift */; };
+		5EF12B565FDAD752516A48398D16D56C /* RAMItemAnimationProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2306B43AB8BDB770E250DCDC70A4DD5E /* RAMItemAnimationProtocol.swift */; };
+		6540BDE78507B8DD14EA8147C5B1888B /* RAMRotationAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B83AE97A7A519D88B657AAD2F5C7570 /* RAMRotationAnimation.swift */; };
+		6799F2974BC8C36E8CBD206CCE6DA83E /* RAMAnimatedTabBarController+BottomLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44FEC500DF15A6C0F5C9A049A56EDEB /* RAMAnimatedTabBarController+BottomLine.swift */; };
+		69FC335F67D3C65528A532CB3BCB7380 /* RevealingSplashView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D0A3CB1864A49B2F40E2A672670020D /* RevealingSplashView-dummy.m */; };
+		6B21DF69A1F8F3CE2D016A4080B01FBD /* RAMFumeAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8DC60DEB390B169AB013C9137F0C64 /* RAMFumeAnimation.swift */; };
+		6E452435AB8B4F76DFC24679693DB6CF /* Animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3075897689A8C6586C83D951BE40E050 /* Animations.swift */; };
+		725E98B507415557A8564FA97401C403 /* Pods-MAPD714-Calculator-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A9835F922EA19E471BF5FFE70F377FCA /* Pods-MAPD714-Calculator-dummy.m */; };
+		72DC939603A9F0BBD0E8D66457236FE1 /* PastelPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE5700F5A71E9106670E7D442279372 /* PastelPoint.swift */; };
+		83545CC4977D2B3D91AA8D64D13E8D41 /* Pastel-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DF26DD8C22B8455E491BABB3C5644340 /* Pastel-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		96DB41C9EC8D48BC1AE5457F2869D2D2 /* RAMAnimatedTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD78326F78E50A26B9920D6911065C9 /* RAMAnimatedTabBarController.swift */; };
+		A1342E0B61406143C22AEC1F8CB645D3 /* SplashAnimationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270F8E558AA150815641987F93B95803 /* SplashAnimationType.swift */; };
+		A67BDAD304FD3830ACD3870E6F862837 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		ACCEAEFD1AE0E9DB59D9C03D80222B92 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		AE114A478A24C3F749CD2AC1516C6007 /* PastelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4472820C0AB7B11D41DECACEBC18BC6 /* PastelView.swift */; };
+		AE78EB706416A22521423CE71075FB96 /* RAMFrameItemAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B91FCDE0F4E4BE5BDEEF43BE15BC02F2 /* RAMFrameItemAnimation.swift */; };
+		BD08ADD7673A97EC6623B2789B7274CC /* PastelGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB155C9F318B4B60A8458C0532A25B0 /* PastelGradient.swift */; };
+		BD625B7564B9D7DDBF663A629CCBB3D9 /* RAMAnimatedTabBarController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AF31E9369C991DD13D2CEFF284FBEF13 /* RAMAnimatedTabBarController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7383BFE2C04B3AD416346ABF6AB09E1 /* RevealingSplashView.h in Headers */ = {isa = PBXBuildFile; fileRef = 8680618A12E03827AAB85A78A30877A6 /* RevealingSplashView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EA1B90F37B0342FCAF685C61EA6DCF57 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
-		F172AF8E54E23B2B0284388470AA52B5 /* RevealingSplashView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8923A3F66F0A969CB58954533B380DE5 /* RevealingSplashView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FD3414B62773954B2EF981C55FCA9708 /* RAMAnimatedTabBarController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A489CB481D1414D31132F94591A92E4 /* RAMAnimatedTabBarController-dummy.m */; };
+		FE561376DECAF8E730FBA7101D024C35 /* RAMBadge.swift in Sources */ = {isa = PBXBuildFile; fileRef = F863BC71010991BB6E8939EEEF6E595A /* RAMBadge.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		332AF06674F3D053ADF9D6A55F1C4A24 /* PBXContainerItemProxy */ = {
+		85E6C931FD6B5F0BD2789F6DC4F83468 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 7EFF316631890C9AC0074B76550D16ED;
-			remoteInfo = RevealingSplashView;
+			remoteGlobalIDString = 88D9D25BB1E01F08DBE01DC9D04DE541;
+			remoteInfo = RAMAnimatedTabBarController;
 		};
-		B84C4DCE4A471A9A58E042EB8F43CDA3 /* PBXContainerItemProxy */ = {
+		8E6E9B649C7A499C80250FC26E12F440 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = B802173CC1EAB3FC68B97D010400ABEA;
 			remoteInfo = Pastel;
 		};
+		BCE7E17DD059849EE20692A5CBC29A79 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 00BB1F1CA0EBE40F7E2E1A8C14969032;
+			remoteInfo = RevealingSplashView;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		03A5FC751133E16C02EA06E9EB1FDCF3 /* PastelGradient.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PastelGradient.swift; path = Pastel/Classes/PastelGradient.swift; sourceTree = "<group>"; };
-		1180B709BCF2873064A3354875EE2F77 /* Pastel-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pastel-dummy.m"; sourceTree = "<group>"; };
+		0DA530440ED9B2FD772C1013F2130BDD /* RAMAnimatedTabBarController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RAMAnimatedTabBarController.xcconfig; sourceTree = "<group>"; };
+		195EB12BF60B267F3BB931A08FDE7B73 /* PastelLabel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PastelLabel.swift; path = Pastel/Classes/PastelLabel.swift; sourceTree = "<group>"; };
 		1A93F9BD800962E52CCF0FC9EF402DE4 /* Pods-MAPD714-Calculator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MAPD714-Calculator.release.xcconfig"; sourceTree = "<group>"; };
-		293B3832309E1454FBB33ABC932E580A /* SplashAnimatable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SplashAnimatable.swift; path = RevealingSplashView/SplashAnimatable.swift; sourceTree = "<group>"; };
-		2D9603201F24F7FF53DEA51E8C2F8E95 /* PastelLabel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PastelLabel.swift; path = Pastel/Classes/PastelLabel.swift; sourceTree = "<group>"; };
-		31F1242BEE279A34B8C6BB22CFB6326C /* RevealingSplashView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = RevealingSplashView.framework; path = RevealingSplashView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3692D0A4540F01277E5869CE5C6B2F31 /* RevealingSplashView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RevealingSplashView.swift; path = RevealingSplashView/RevealingSplashView.swift; sourceTree = "<group>"; };
-		3B02FC0880AC5081D38E94FB050E5BD7 /* Pastel.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Pastel.modulemap; sourceTree = "<group>"; };
+		1AFB547D5597D77DF489F6080B86BD10 /* RevealingSplashView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RevealingSplashView.swift; path = RevealingSplashView/RevealingSplashView.swift; sourceTree = "<group>"; };
+		1B7CE12AC766F94E6F218A0B25DF96EC /* RAMAnimatedTabBarController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RAMAnimatedTabBarController-prefix.pch"; sourceTree = "<group>"; };
+		1DEDA352FF8F823CC8EAA16EF48DA331 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2306B43AB8BDB770E250DCDC70A4DD5E /* RAMItemAnimationProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RAMItemAnimationProtocol.swift; path = RAMAnimatedTabBarController/RAMItemAnimationProtocol.swift; sourceTree = "<group>"; };
+		270F8E558AA150815641987F93B95803 /* SplashAnimationType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SplashAnimationType.swift; path = RevealingSplashView/SplashAnimationType.swift; sourceTree = "<group>"; };
+		284A6A9E12ABCFCE76026FE173E27FD7 /* RevealingSplashView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = RevealingSplashView.modulemap; sourceTree = "<group>"; };
+		2E0A0E09AE0E0E52B055192DA05E2693 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3075897689A8C6586C83D951BE40E050 /* Animations.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Animations.swift; path = RevealingSplashView/Animations.swift; sourceTree = "<group>"; };
+		3CB155C9F318B4B60A8458C0532A25B0 /* PastelGradient.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PastelGradient.swift; path = Pastel/Classes/PastelGradient.swift; sourceTree = "<group>"; };
 		410BA53382234637094D7DD461F564B7 /* Pods-MAPD714-Calculator-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MAPD714-Calculator-umbrella.h"; sourceTree = "<group>"; };
-		431C6448879EA982F4A0F1A3BAC6FEEE /* Animations.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Animations.swift; path = RevealingSplashView/Animations.swift; sourceTree = "<group>"; };
 		48459CE6CC65E014CB0DB0BE48C49C2A /* Pods-MAPD714-Calculator-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MAPD714-Calculator-frameworks.sh"; sourceTree = "<group>"; };
-		4ADA44CF937F5694F41FBD72EB126F57 /* PastelView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PastelView.swift; path = Pastel/Classes/PastelView.swift; sourceTree = "<group>"; };
-		4E36AFA8F41F02961901A4A60A174822 /* Pastel-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pastel-umbrella.h"; sourceTree = "<group>"; };
-		544C8F13E0C83DAD2ABC6D85CE60432B /* SplashAnimationType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SplashAnimationType.swift; path = RevealingSplashView/SplashAnimationType.swift; sourceTree = "<group>"; };
+		53827FB25B00EEA87F15C2D396D886D6 /* RAMAnimatedTabBarController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = RAMAnimatedTabBarController.modulemap; sourceTree = "<group>"; };
+		57FB76256D0AF82414AEA7FF9DBE8C45 /* RevealingSplashView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RevealingSplashView-umbrella.h"; sourceTree = "<group>"; };
 		5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		5A489CB481D1414D31132F94591A92E4 /* RAMAnimatedTabBarController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RAMAnimatedTabBarController-dummy.m"; sourceTree = "<group>"; };
+		5B83AE97A7A519D88B657AAD2F5C7570 /* RAMRotationAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RAMRotationAnimation.swift; path = RAMAnimatedTabBarController/Animations/RotationAnimation/RAMRotationAnimation.swift; sourceTree = "<group>"; };
 		5C6A64103B8DBE0E2895B1B9BA963C93 /* Pods-MAPD714-Calculator.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MAPD714-Calculator.modulemap"; sourceTree = "<group>"; };
-		5DB1B412BE0C5625A57AD5994B950BCD /* Pods_MAPD714_Calculator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MAPD714_Calculator.framework; path = "Pods-MAPD714-Calculator.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		62726A969276F6B4B51FFD4190251538 /* RevealingSplashView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RevealingSplashView.h; path = RevealingSplashView/RevealingSplashView.h; sourceTree = "<group>"; };
-		62A41B1158E78A9D1FD7CCD9AE783BD2 /* RevealingSplashView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RevealingSplashView-prefix.pch"; sourceTree = "<group>"; };
-		845362AB00051E4825EFBA14D0F25BD7 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5FD78326F78E50A26B9920D6911065C9 /* RAMAnimatedTabBarController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RAMAnimatedTabBarController.swift; path = RAMAnimatedTabBarController/RAMAnimatedTabBarController.swift; sourceTree = "<group>"; };
+		6A5A0328414D0F4D1EBC1DEFFC8072F7 /* Pods_MAPD714_Calculator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MAPD714_Calculator.framework; path = "Pods-MAPD714-Calculator.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		72624943C8B7E66CABBB3AC2D37C9A3F /* Pastel-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pastel-dummy.m"; sourceTree = "<group>"; };
+		75B18FF4532C569BF8BC5D092CAFDB67 /* RAMBounceAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RAMBounceAnimation.swift; path = RAMAnimatedTabBarController/Animations/BounceAnimation/RAMBounceAnimation.swift; sourceTree = "<group>"; };
+		76F7CFBF80F2608617B40BC386A3A7B6 /* RAMAnimatedTabBarController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = RAMAnimatedTabBarController.framework; path = RAMAnimatedTabBarController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D0A3CB1864A49B2F40E2A672670020D /* RevealingSplashView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RevealingSplashView-dummy.m"; sourceTree = "<group>"; };
+		846AB44F2ABEC6E0E27C4D0EA7CCF2A4 /* RAMTransitionItemAnimations.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RAMTransitionItemAnimations.swift; path = RAMAnimatedTabBarController/Animations/TransitionAniamtions/RAMTransitionItemAnimations.swift; sourceTree = "<group>"; };
+		8680618A12E03827AAB85A78A30877A6 /* RevealingSplashView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RevealingSplashView.h; path = RevealingSplashView/RevealingSplashView.h; sourceTree = "<group>"; };
 		86DA24F02EDF40614A80B5B42E4F7690 /* Pods-MAPD714-Calculator-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MAPD714-Calculator-resources.sh"; sourceTree = "<group>"; };
-		8923A3F66F0A969CB58954533B380DE5 /* RevealingSplashView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RevealingSplashView-umbrella.h"; sourceTree = "<group>"; };
+		8E8EA9A261D8857ED7E35BF9DF7F8A7B /* Pastel.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pastel.xcconfig; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		957E0FA86D74F86C00435C18F95F3949 /* Pastel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pastel.framework; path = Pastel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		973CC9BE7338C07BBCD4D331B090D3B4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A6519B2958676392405998649384AE19 /* RevealingSplashView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = RevealingSplashView.modulemap; sourceTree = "<group>"; };
+		9C8DC60DEB390B169AB013C9137F0C64 /* RAMFumeAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RAMFumeAnimation.swift; path = RAMAnimatedTabBarController/Animations/FumeAnimation/RAMFumeAnimation.swift; sourceTree = "<group>"; };
+		A4472820C0AB7B11D41DECACEBC18BC6 /* PastelView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PastelView.swift; path = Pastel/Classes/PastelView.swift; sourceTree = "<group>"; };
 		A73AA8B9C84B74994341C454A1F6B6F9 /* Pods-MAPD714-Calculator-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MAPD714-Calculator-acknowledgements.plist"; sourceTree = "<group>"; };
 		A9835F922EA19E471BF5FFE70F377FCA /* Pods-MAPD714-Calculator-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MAPD714-Calculator-dummy.m"; sourceTree = "<group>"; };
-		A9B1B8B9B1A8F008B4D1CC25DB5C1A1C /* Pastel.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pastel.xcconfig; sourceTree = "<group>"; };
-		ACF53EF8B7168BC7BB15CE00EA83465B /* Pastel-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pastel-prefix.pch"; sourceTree = "<group>"; };
+		AF31E9369C991DD13D2CEFF284FBEF13 /* RAMAnimatedTabBarController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RAMAnimatedTabBarController-umbrella.h"; sourceTree = "<group>"; };
+		B4B435172C5020338CC8A574284CF08E /* RevealingSplashView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RevealingSplashView-prefix.pch"; sourceTree = "<group>"; };
 		B68395244DBC20B8A9C699C9848BF4DA /* Pods-MAPD714-Calculator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MAPD714-Calculator.debug.xcconfig"; sourceTree = "<group>"; };
+		B91FCDE0F4E4BE5BDEEF43BE15BC02F2 /* RAMFrameItemAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RAMFrameItemAnimation.swift; path = RAMAnimatedTabBarController/Animations/FrameAnimation/RAMFrameItemAnimation.swift; sourceTree = "<group>"; };
+		BBB01E666E0CFE2A9A6E4FA80DD4FCD8 /* RevealingSplashView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RevealingSplashView.xcconfig; sourceTree = "<group>"; };
+		C44FEC500DF15A6C0F5C9A049A56EDEB /* RAMAnimatedTabBarController+BottomLine.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "RAMAnimatedTabBarController+BottomLine.swift"; path = "RAMAnimatedTabBarController/BottomLine/RAMAnimatedTabBarController+BottomLine.swift"; sourceTree = "<group>"; };
 		C93DCDE5BDF0E7EDCC0EDAFAC6C38F87 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CD4AFC2DE716B78EECDBB92B23303E99 /* PastelPoint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PastelPoint.swift; path = Pastel/Classes/PastelPoint.swift; sourceTree = "<group>"; };
-		F04C72C35EA9F7064A84C4952D77A862 /* RevealingSplashView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RevealingSplashView.xcconfig; sourceTree = "<group>"; };
+		CEE5700F5A71E9106670E7D442279372 /* PastelPoint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PastelPoint.swift; path = Pastel/Classes/PastelPoint.swift; sourceTree = "<group>"; };
+		D060096331FD308CC588A0D265D1BC90 /* SplashAnimatable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SplashAnimatable.swift; path = RevealingSplashView/SplashAnimatable.swift; sourceTree = "<group>"; };
+		D6583EEF3145D018C4885EA833058AFC /* Pastel-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pastel-prefix.pch"; sourceTree = "<group>"; };
+		D725EEC38E95EA8467E5C0FF8E068E34 /* RevealingSplashView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = RevealingSplashView.framework; path = RevealingSplashView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF26DD8C22B8455E491BABB3C5644340 /* Pastel-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pastel-umbrella.h"; sourceTree = "<group>"; };
+		E21F55B2FFE658143FE4ADC7E316EA54 /* Pastel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pastel.framework; path = Pastel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9CAAE9352692A88DC82ECD5822424FE /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F21EADAF848581DDF6AE6FBFE9329E4B /* Pods-MAPD714-Calculator-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MAPD714-Calculator-acknowledgements.markdown"; sourceTree = "<group>"; };
-		FDDA191734B95C2CD780E8FD9318A08B /* RevealingSplashView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RevealingSplashView-dummy.m"; sourceTree = "<group>"; };
+		F863BC71010991BB6E8939EEEF6E595A /* RAMBadge.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RAMBadge.swift; path = RAMAnimatedTabBarController/RAMBadge/RAMBadge.swift; sourceTree = "<group>"; };
+		F9EC07D4F82E187A8E2FA58D6A384AD3 /* Pastel.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Pastel.modulemap; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		437F8556434813E6AE4F0772828B4358 /* Frameworks */ = {
+		05207C322AAB2C01BC0C55FBA3B981DF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				94C0AACCF4767C0EB25F5C4AAA44F9AD /* Foundation.framework in Frameworks */,
+				5604C2ADAF82791ACD26AD557CE6FB95 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		82A11B9F9D4F48C333FC3CDC06FC859C /* Frameworks */ = {
+		459C3408F8044B1DF6C54E94A4618FEB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				649FE9DC0D3C1445E94EA67E231DED9C /* Foundation.framework in Frameworks */,
+				A67BDAD304FD3830ACD3870E6F862837 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63A1A7A96E341FB75C273711AB933FA7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACCEAEFD1AE0E9DB59D9C03D80222B92 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -111,6 +154,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		04E7D1FF45987FE9B1A1403941E3567F /* RevealingSplashView */ = {
+			isa = PBXGroup;
+			children = (
+				3075897689A8C6586C83D951BE40E050 /* Animations.swift */,
+				8680618A12E03827AAB85A78A30877A6 /* RevealingSplashView.h */,
+				1AFB547D5597D77DF489F6080B86BD10 /* RevealingSplashView.swift */,
+				D060096331FD308CC588A0D265D1BC90 /* SplashAnimatable.swift */,
+				270F8E558AA150815641987F93B95803 /* SplashAnimationType.swift */,
+				83DB8C2436400DAD678E886A6E5EB8C6 /* Support Files */,
+			);
+			name = RevealingSplashView;
+			path = RevealingSplashView;
+			sourceTree = "<group>";
+		};
+		118D4A624DC4DB8F2A0E7CE117774739 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				61A2B7F59FE72ED658B789A561AC6D79 /* Pastel */,
+				FFC030F5501E6AF47393DB46ECBF4B7C /* RAMAnimatedTabBarController */,
+				04E7D1FF45987FE9B1A1403941E3567F /* RevealingSplashView */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		22B1F9FC1A8EE56934E599D8C77EA995 /* Pods-MAPD714-Calculator */ = {
 			isa = PBXGroup;
 			children = (
@@ -129,37 +196,18 @@
 			path = "Target Support Files/Pods-MAPD714-Calculator";
 			sourceTree = "<group>";
 		};
-		31E9FAEF37D31E6AD26E92364CEEE58E /* Products */ = {
+		4FC36D8157BD704BD99099C1093BDE97 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				957E0FA86D74F86C00435C18F95F3949 /* Pastel.framework */,
-				5DB1B412BE0C5625A57AD5994B950BCD /* Pods_MAPD714_Calculator.framework */,
-				31F1242BEE279A34B8C6BB22CFB6326C /* RevealingSplashView.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		37D6C0F10EB98B35016AF9873B5EC87B /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				845362AB00051E4825EFBA14D0F25BD7 /* Info.plist */,
-				3B02FC0880AC5081D38E94FB050E5BD7 /* Pastel.modulemap */,
-				A9B1B8B9B1A8F008B4D1CC25DB5C1A1C /* Pastel.xcconfig */,
-				1180B709BCF2873064A3354875EE2F77 /* Pastel-dummy.m */,
-				ACF53EF8B7168BC7BB15CE00EA83465B /* Pastel-prefix.pch */,
-				4E36AFA8F41F02961901A4A60A174822 /* Pastel-umbrella.h */,
+				1DEDA352FF8F823CC8EAA16EF48DA331 /* Info.plist */,
+				53827FB25B00EEA87F15C2D396D886D6 /* RAMAnimatedTabBarController.modulemap */,
+				0DA530440ED9B2FD772C1013F2130BDD /* RAMAnimatedTabBarController.xcconfig */,
+				5A489CB481D1414D31132F94591A92E4 /* RAMAnimatedTabBarController-dummy.m */,
+				1B7CE12AC766F94E6F218A0B25DF96EC /* RAMAnimatedTabBarController-prefix.pch */,
+				AF31E9369C991DD13D2CEFF284FBEF13 /* RAMAnimatedTabBarController-umbrella.h */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/Pastel";
-			sourceTree = "<group>";
-		};
-		4580A45E2FF00239D362371B145AE560 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				BEF585041B7D9A19DF5E1107953A1E13 /* Pastel */,
-				83E8C2935B8FAFCC5F36692B6239E6C1 /* RevealingSplashView */,
-			);
-			name = Pods;
+			path = "../Target Support Files/RAMAnimatedTabBarController";
 			sourceTree = "<group>";
 		};
 		576CD81DDADBEF80B8CEF684BACB277B /* Targets Support Files */ = {
@@ -170,20 +218,6 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		5DA65731F728417C1EB590D6522D0DDC /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				973CC9BE7338C07BBCD4D331B090D3B4 /* Info.plist */,
-				A6519B2958676392405998649384AE19 /* RevealingSplashView.modulemap */,
-				F04C72C35EA9F7064A84C4952D77A862 /* RevealingSplashView.xcconfig */,
-				FDDA191734B95C2CD780E8FD9318A08B /* RevealingSplashView-dummy.m */,
-				62A41B1158E78A9D1FD7CCD9AE783BD2 /* RevealingSplashView-prefix.pch */,
-				8923A3F66F0A969CB58954533B380DE5 /* RevealingSplashView-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/RevealingSplashView";
-			sourceTree = "<group>";
-		};
 		5E0D919E635D23B70123790B8308F8EF /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -192,29 +226,42 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
+		61A2B7F59FE72ED658B789A561AC6D79 /* Pastel */ = {
+			isa = PBXGroup;
+			children = (
+				3CB155C9F318B4B60A8458C0532A25B0 /* PastelGradient.swift */,
+				195EB12BF60B267F3BB931A08FDE7B73 /* PastelLabel.swift */,
+				CEE5700F5A71E9106670E7D442279372 /* PastelPoint.swift */,
+				A4472820C0AB7B11D41DECACEBC18BC6 /* PastelView.swift */,
+				DB85A57DB8EFEAAE113E39B54D0FB6D2 /* Support Files */,
+			);
+			name = Pastel;
+			path = Pastel;
+			sourceTree = "<group>";
+		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				4580A45E2FF00239D362371B145AE560 /* Pods */,
-				31E9FAEF37D31E6AD26E92364CEEE58E /* Products */,
+				118D4A624DC4DB8F2A0E7CE117774739 /* Pods */,
+				FD2A130EAAFFE6BACCD6B0AC9D389F49 /* Products */,
 				576CD81DDADBEF80B8CEF684BACB277B /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		83E8C2935B8FAFCC5F36692B6239E6C1 /* RevealingSplashView */ = {
+		83DB8C2436400DAD678E886A6E5EB8C6 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				431C6448879EA982F4A0F1A3BAC6FEEE /* Animations.swift */,
-				62726A969276F6B4B51FFD4190251538 /* RevealingSplashView.h */,
-				3692D0A4540F01277E5869CE5C6B2F31 /* RevealingSplashView.swift */,
-				293B3832309E1454FBB33ABC932E580A /* SplashAnimatable.swift */,
-				544C8F13E0C83DAD2ABC6D85CE60432B /* SplashAnimationType.swift */,
-				5DA65731F728417C1EB590D6522D0DDC /* Support Files */,
+				E9CAAE9352692A88DC82ECD5822424FE /* Info.plist */,
+				284A6A9E12ABCFCE76026FE173E27FD7 /* RevealingSplashView.modulemap */,
+				BBB01E666E0CFE2A9A6E4FA80DD4FCD8 /* RevealingSplashView.xcconfig */,
+				7D0A3CB1864A49B2F40E2A672670020D /* RevealingSplashView-dummy.m */,
+				B4B435172C5020338CC8A574284CF08E /* RevealingSplashView-prefix.pch */,
+				57FB76256D0AF82414AEA7FF9DBE8C45 /* RevealingSplashView-umbrella.h */,
 			);
-			name = RevealingSplashView;
-			path = RevealingSplashView;
+			name = "Support Files";
+			path = "../Target Support Files/RevealingSplashView";
 			sourceTree = "<group>";
 		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
@@ -225,17 +272,47 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		BEF585041B7D9A19DF5E1107953A1E13 /* Pastel */ = {
+		DB85A57DB8EFEAAE113E39B54D0FB6D2 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				03A5FC751133E16C02EA06E9EB1FDCF3 /* PastelGradient.swift */,
-				2D9603201F24F7FF53DEA51E8C2F8E95 /* PastelLabel.swift */,
-				CD4AFC2DE716B78EECDBB92B23303E99 /* PastelPoint.swift */,
-				4ADA44CF937F5694F41FBD72EB126F57 /* PastelView.swift */,
-				37D6C0F10EB98B35016AF9873B5EC87B /* Support Files */,
+				2E0A0E09AE0E0E52B055192DA05E2693 /* Info.plist */,
+				F9EC07D4F82E187A8E2FA58D6A384AD3 /* Pastel.modulemap */,
+				8E8EA9A261D8857ED7E35BF9DF7F8A7B /* Pastel.xcconfig */,
+				72624943C8B7E66CABBB3AC2D37C9A3F /* Pastel-dummy.m */,
+				D6583EEF3145D018C4885EA833058AFC /* Pastel-prefix.pch */,
+				DF26DD8C22B8455E491BABB3C5644340 /* Pastel-umbrella.h */,
 			);
-			name = Pastel;
-			path = Pastel;
+			name = "Support Files";
+			path = "../Target Support Files/Pastel";
+			sourceTree = "<group>";
+		};
+		FD2A130EAAFFE6BACCD6B0AC9D389F49 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E21F55B2FFE658143FE4ADC7E316EA54 /* Pastel.framework */,
+				6A5A0328414D0F4D1EBC1DEFFC8072F7 /* Pods_MAPD714_Calculator.framework */,
+				76F7CFBF80F2608617B40BC386A3A7B6 /* RAMAnimatedTabBarController.framework */,
+				D725EEC38E95EA8467E5C0FF8E068E34 /* RevealingSplashView.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FFC030F5501E6AF47393DB46ECBF4B7C /* RAMAnimatedTabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				5FD78326F78E50A26B9920D6911065C9 /* RAMAnimatedTabBarController.swift */,
+				C44FEC500DF15A6C0F5C9A049A56EDEB /* RAMAnimatedTabBarController+BottomLine.swift */,
+				F863BC71010991BB6E8939EEEF6E595A /* RAMBadge.swift */,
+				75B18FF4532C569BF8BC5D092CAFDB67 /* RAMBounceAnimation.swift */,
+				B91FCDE0F4E4BE5BDEEF43BE15BC02F2 /* RAMFrameItemAnimation.swift */,
+				9C8DC60DEB390B169AB013C9137F0C64 /* RAMFumeAnimation.swift */,
+				2306B43AB8BDB770E250DCDC70A4DD5E /* RAMItemAnimationProtocol.swift */,
+				5B83AE97A7A519D88B657AAD2F5C7570 /* RAMRotationAnimation.swift */,
+				846AB44F2ABEC6E0E27C4D0EA7CCF2A4 /* RAMTransitionItemAnimations.swift */,
+				4FC36D8157BD704BD99099C1093BDE97 /* Support Files */,
+			);
+			name = RAMAnimatedTabBarController;
+			path = RAMAnimatedTabBarController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -249,34 +326,42 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6D3F285091AE94D7A7A370D2A80457D0 /* Headers */ = {
+		431BE14A71DFA6CF758354AECF70186E /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B8B35189B852A758126664957691B9C7 /* Pods-MAPD714-Calculator-umbrella.h in Headers */,
+				210754AA67F3BE5D2220DD3EB140B327 /* RevealingSplashView-umbrella.h in Headers */,
+				D7383BFE2C04B3AD416346ABF6AB09E1 /* RevealingSplashView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C0347175622692A3F07694180FB70977 /* Headers */ = {
+		51E8CB2E1A2B65A0DCA375929575CA83 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F172AF8E54E23B2B0284388470AA52B5 /* RevealingSplashView-umbrella.h in Headers */,
-				778821617BBBDFE4864BBCFB2A36AAEF /* RevealingSplashView.h in Headers */,
+				2B64D2CF764CD063F979CFDE2E61253E /* Pods-MAPD714-Calculator-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB82028A603D4592A742A110E75D3971 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD625B7564B9D7DDBF663A629CCBB3D9 /* RAMAnimatedTabBarController-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		7EFF316631890C9AC0074B76550D16ED /* RevealingSplashView */ = {
+		00BB1F1CA0EBE40F7E2E1A8C14969032 /* RevealingSplashView */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2DAD1EAB19914150A528BB94A958CD1C /* Build configuration list for PBXNativeTarget "RevealingSplashView" */;
+			buildConfigurationList = 229C5C6B8906C19903E1359593866AC0 /* Build configuration list for PBXNativeTarget "RevealingSplashView" */;
 			buildPhases = (
-				C0347175622692A3F07694180FB70977 /* Headers */,
-				AAD848D8E35FE850842840B52FF66B6A /* Sources */,
-				437F8556434813E6AE4F0772828B4358 /* Frameworks */,
-				E272B2455CACC52F9420D2619EF5CD5E /* Resources */,
+				431BE14A71DFA6CF758354AECF70186E /* Headers */,
+				0EC8DD38A26491EFA4EEE7427294A5B9 /* Sources */,
+				05207C322AAB2C01BC0C55FBA3B981DF /* Frameworks */,
+				0D45F86F14A54DC48EC081A2FB1FA7B6 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -284,7 +369,25 @@
 			);
 			name = RevealingSplashView;
 			productName = RevealingSplashView;
-			productReference = 31F1242BEE279A34B8C6BB22CFB6326C /* RevealingSplashView.framework */;
+			productReference = D725EEC38E95EA8467E5C0FF8E068E34 /* RevealingSplashView.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		88D9D25BB1E01F08DBE01DC9D04DE541 /* RAMAnimatedTabBarController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3152004D84A0AD8CB67C24CED97A0DFC /* Build configuration list for PBXNativeTarget "RAMAnimatedTabBarController" */;
+			buildPhases = (
+				AB82028A603D4592A742A110E75D3971 /* Headers */,
+				1C687A14A4D519A3C71E1AF7FAE07EE9 /* Sources */,
+				459C3408F8044B1DF6C54E94A4618FEB /* Frameworks */,
+				7FBB07508B8E080576D86F1EF4F4AFA7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RAMAnimatedTabBarController;
+			productName = RAMAnimatedTabBarController;
+			productReference = 76F7CFBF80F2608617B40BC386A3A7B6 /* RAMAnimatedTabBarController.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		B802173CC1EAB3FC68B97D010400ABEA /* Pastel */ = {
@@ -302,27 +405,28 @@
 			);
 			name = Pastel;
 			productName = Pastel;
-			productReference = 957E0FA86D74F86C00435C18F95F3949 /* Pastel.framework */;
+			productReference = E21F55B2FFE658143FE4ADC7E316EA54 /* Pastel.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		F21FDCE27C15627BF8F252AE907C5882 /* Pods-MAPD714-Calculator */ = {
+		CB8B8623A1E1470F6EC10A071DAA99D3 /* Pods-MAPD714-Calculator */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7CF33B98D4A1EB61580CD370D5468F4B /* Build configuration list for PBXNativeTarget "Pods-MAPD714-Calculator" */;
+			buildConfigurationList = FB982BDD660EE8B8467093E4F22CD911 /* Build configuration list for PBXNativeTarget "Pods-MAPD714-Calculator" */;
 			buildPhases = (
-				6D3F285091AE94D7A7A370D2A80457D0 /* Headers */,
-				D416C6E2D82AF7542159B41019AA4A0D /* Sources */,
-				82A11B9F9D4F48C333FC3CDC06FC859C /* Frameworks */,
-				1C67B665B4BF9D24B914A803A6C8D48C /* Resources */,
+				51E8CB2E1A2B65A0DCA375929575CA83 /* Headers */,
+				D276370BC536F7C237C4939E2D4A448C /* Sources */,
+				63A1A7A96E341FB75C273711AB933FA7 /* Frameworks */,
+				48832EE06754D3E17A31DC1E47F6F72E /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				E90F21CE63D3F39B8991FB4AA958C670 /* PBXTargetDependency */,
-				3052B0C33371AC9E1B57F1F55B0D4B9E /* PBXTargetDependency */,
+				CB820F5B3641D8D85266BF75F8628312 /* PBXTargetDependency */,
+				0616DFD21D2784EAF6BCA779A5642DD5 /* PBXTargetDependency */,
+				27F0949F465859A1B743F44E505024D2 /* PBXTargetDependency */,
 			);
 			name = "Pods-MAPD714-Calculator";
 			productName = "Pods-MAPD714-Calculator";
-			productReference = 5DB1B412BE0C5625A57AD5994B950BCD /* Pods_MAPD714_Calculator.framework */;
+			productReference = 6A5A0328414D0F4D1EBC1DEFFC8072F7 /* Pods_MAPD714_Calculator.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -342,19 +446,27 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 31E9FAEF37D31E6AD26E92364CEEE58E /* Products */;
+			productRefGroup = FD2A130EAAFFE6BACCD6B0AC9D389F49 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				B802173CC1EAB3FC68B97D010400ABEA /* Pastel */,
-				F21FDCE27C15627BF8F252AE907C5882 /* Pods-MAPD714-Calculator */,
-				7EFF316631890C9AC0074B76550D16ED /* RevealingSplashView */,
+				CB8B8623A1E1470F6EC10A071DAA99D3 /* Pods-MAPD714-Calculator */,
+				88D9D25BB1E01F08DBE01DC9D04DE541 /* RAMAnimatedTabBarController */,
+				00BB1F1CA0EBE40F7E2E1A8C14969032 /* RevealingSplashView */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		1C67B665B4BF9D24B914A803A6C8D48C /* Resources */ = {
+		0D45F86F14A54DC48EC081A2FB1FA7B6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		48832EE06754D3E17A31DC1E47F6F72E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -368,7 +480,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E272B2455CACC52F9420D2619EF5CD5E /* Resources */ = {
+		7FBB07508B8E080576D86F1EF4F4AFA7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -378,23 +490,40 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		AAD848D8E35FE850842840B52FF66B6A /* Sources */ = {
+		0EC8DD38A26491EFA4EEE7427294A5B9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8247B92E492D368717E318A675BC400C /* Animations.swift in Sources */,
-				32E34F8BBB7DB64A4770808BEAAD685C /* RevealingSplashView-dummy.m in Sources */,
-				190A99049394084843EFD86FFA67F8C8 /* RevealingSplashView.swift in Sources */,
-				646D626DDFD66B719C32DF0B8A6A5F0A /* SplashAnimatable.swift in Sources */,
-				07D256CCB0D45B575FB2630B73E9470B /* SplashAnimationType.swift in Sources */,
+				6E452435AB8B4F76DFC24679693DB6CF /* Animations.swift in Sources */,
+				69FC335F67D3C65528A532CB3BCB7380 /* RevealingSplashView-dummy.m in Sources */,
+				3721F86B423099465EF55F50AA03BBC7 /* RevealingSplashView.swift in Sources */,
+				5B25AAC94B152ADDA3D787C8A5790C06 /* SplashAnimatable.swift in Sources */,
+				A1342E0B61406143C22AEC1F8CB645D3 /* SplashAnimationType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D416C6E2D82AF7542159B41019AA4A0D /* Sources */ = {
+		1C687A14A4D519A3C71E1AF7FAE07EE9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3207C8EEEDEF21055B937344B17D8372 /* Pods-MAPD714-Calculator-dummy.m in Sources */,
+				6799F2974BC8C36E8CBD206CCE6DA83E /* RAMAnimatedTabBarController+BottomLine.swift in Sources */,
+				FD3414B62773954B2EF981C55FCA9708 /* RAMAnimatedTabBarController-dummy.m in Sources */,
+				96DB41C9EC8D48BC1AE5457F2869D2D2 /* RAMAnimatedTabBarController.swift in Sources */,
+				FE561376DECAF8E730FBA7101D024C35 /* RAMBadge.swift in Sources */,
+				00F2AF770E9096668263E14BE97C5D17 /* RAMBounceAnimation.swift in Sources */,
+				AE78EB706416A22521423CE71075FB96 /* RAMFrameItemAnimation.swift in Sources */,
+				6B21DF69A1F8F3CE2D016A4080B01FBD /* RAMFumeAnimation.swift in Sources */,
+				5EF12B565FDAD752516A48398D16D56C /* RAMItemAnimationProtocol.swift in Sources */,
+				6540BDE78507B8DD14EA8147C5B1888B /* RAMRotationAnimation.swift in Sources */,
+				091BE77297FA1442A7318088099BC8F6 /* RAMTransitionItemAnimations.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D276370BC536F7C237C4939E2D4A448C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				725E98B507415557A8564FA97401C403 /* Pods-MAPD714-Calculator-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -413,24 +542,30 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		3052B0C33371AC9E1B57F1F55B0D4B9E /* PBXTargetDependency */ = {
+		0616DFD21D2784EAF6BCA779A5642DD5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RAMAnimatedTabBarController;
+			target = 88D9D25BB1E01F08DBE01DC9D04DE541 /* RAMAnimatedTabBarController */;
+			targetProxy = 85E6C931FD6B5F0BD2789F6DC4F83468 /* PBXContainerItemProxy */;
+		};
+		27F0949F465859A1B743F44E505024D2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = RevealingSplashView;
-			target = 7EFF316631890C9AC0074B76550D16ED /* RevealingSplashView */;
-			targetProxy = 332AF06674F3D053ADF9D6A55F1C4A24 /* PBXContainerItemProxy */;
+			target = 00BB1F1CA0EBE40F7E2E1A8C14969032 /* RevealingSplashView */;
+			targetProxy = BCE7E17DD059849EE20692A5CBC29A79 /* PBXContainerItemProxy */;
 		};
-		E90F21CE63D3F39B8991FB4AA958C670 /* PBXTargetDependency */ = {
+		CB820F5B3641D8D85266BF75F8628312 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Pastel;
 			target = B802173CC1EAB3FC68B97D010400ABEA /* Pastel */;
-			targetProxy = B84C4DCE4A471A9A58E042EB8F43CDA3 /* PBXContainerItemProxy */;
+			targetProxy = 8E6E9B649C7A499C80250FC26E12F440 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		14F5D9E1277B28BD9F546F00851CCA12 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A9B1B8B9B1A8F008B4D1CC25DB5C1A1C /* Pastel.xcconfig */;
+			baseConfigurationReference = 8E8EA9A261D8857ED7E35BF9DF7F8A7B /* Pastel.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -464,7 +599,117 @@
 			};
 			name = Debug;
 		};
-		40B45BB3CF3EE4476259302A7FAAD78F /* Release */ = {
+		1B8CA26647580039A039CD765D8219BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BBB01E666E0CFE2A9A6E4FA80DD4FCD8 /* RevealingSplashView.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/RevealingSplashView/RevealingSplashView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/RevealingSplashView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/RevealingSplashView/RevealingSplashView.modulemap";
+				PRODUCT_MODULE_NAME = RevealingSplashView;
+				PRODUCT_NAME = RevealingSplashView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3B31513717707E84FD58D63AC05364D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0DA530440ED9B2FD772C1013F2130BDD /* RAMAnimatedTabBarController.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/RAMAnimatedTabBarController/RAMAnimatedTabBarController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/RAMAnimatedTabBarController/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/RAMAnimatedTabBarController/RAMAnimatedTabBarController.modulemap";
+				PRODUCT_MODULE_NAME = RAMAnimatedTabBarController;
+				PRODUCT_NAME = RAMAnimatedTabBarController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5D0868276FEB3B221963954CCB127B10 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8E8EA9A261D8857ED7E35BF9DF7F8A7B /* Pastel.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Pastel/Pastel-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pastel/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Pastel/Pastel.modulemap";
+				PRODUCT_MODULE_NAME = Pastel;
+				PRODUCT_NAME = Pastel;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		90801340DB97DA2D6643DE3ECC36F95F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -514,7 +759,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -523,9 +768,9 @@
 			};
 			name = Release;
 		};
-		5D0868276FEB3B221963954CCB127B10 /* Release */ = {
+		96D0A6CA2E08C9AF0234753691AA65AA /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A9B1B8B9B1A8F008B4D1CC25DB5C1A1C /* Pastel.xcconfig */;
+			baseConfigurationReference = 0DA530440ED9B2FD772C1013F2130BDD /* RAMAnimatedTabBarController.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -536,18 +781,18 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/Pastel/Pastel-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Pastel/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/RAMAnimatedTabBarController/RAMAnimatedTabBarController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/RAMAnimatedTabBarController/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MODULEMAP_FILE = "Target Support Files/Pastel/Pastel.modulemap";
-				PRODUCT_MODULE_NAME = Pastel;
-				PRODUCT_NAME = Pastel;
+				MODULEMAP_FILE = "Target Support Files/RAMAnimatedTabBarController/RAMAnimatedTabBarController.modulemap";
+				PRODUCT_MODULE_NAME = RAMAnimatedTabBarController;
+				PRODUCT_NAME = RAMAnimatedTabBarController;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
@@ -561,7 +806,7 @@
 			};
 			name = Release;
 		};
-		85ED3013A635C27F8B7FAF51362B108C /* Debug */ = {
+		A610193BC95AA1FBE8D125DF9AD72C9D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -614,7 +859,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -625,85 +870,9 @@
 			};
 			name = Debug;
 		};
-		877BCC13C838A3EF685D44EBC97C5A86 /* Debug */ = {
+		BBF1B91EED6E219532F16CA9C5CA1F41 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B68395244DBC20B8A9C699C9848BF4DA /* Pods-MAPD714-Calculator.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-MAPD714-Calculator/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-MAPD714-Calculator/Pods-MAPD714-Calculator.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		C3D4D1CB157857F425F8CA4A71AF3706 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F04C72C35EA9F7064A84C4952D77A862 /* RevealingSplashView.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/RevealingSplashView/RevealingSplashView-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/RevealingSplashView/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/RevealingSplashView/RevealingSplashView.modulemap";
-				PRODUCT_MODULE_NAME = RevealingSplashView;
-				PRODUCT_NAME = RevealingSplashView;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		DF369051159A33B253B3C7AC95AAC5AB /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F04C72C35EA9F7064A84C4952D77A862 /* RevealingSplashView.xcconfig */;
+			baseConfigurationReference = BBB01E666E0CFE2A9A6E4FA80DD4FCD8 /* RevealingSplashView.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -739,7 +908,47 @@
 			};
 			name = Release;
 		};
-		F156C599B8B0C761289C31AA19FC8303 /* Release */ = {
+		C48497DAE1B223DDCFAAB2D65017A98E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B68395244DBC20B8A9C699C9848BF4DA /* Pods-MAPD714-Calculator.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MAPD714-Calculator/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MAPD714-Calculator/Pods-MAPD714-Calculator.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D6E4F5206DB7F5F07B57504B4E9917DF /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1A93F9BD800962E52CCF0FC9EF402DE4 /* Pods-MAPD714-Calculator.release.xcconfig */;
 			buildSettings = {
@@ -756,7 +965,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-MAPD714-Calculator/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -792,29 +1001,38 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		229C5C6B8906C19903E1359593866AC0 /* Build configuration list for PBXNativeTarget "RevealingSplashView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1B8CA26647580039A039CD765D8219BE /* Debug */,
+				BBF1B91EED6E219532F16CA9C5CA1F41 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				85ED3013A635C27F8B7FAF51362B108C /* Debug */,
-				40B45BB3CF3EE4476259302A7FAAD78F /* Release */,
+				A610193BC95AA1FBE8D125DF9AD72C9D /* Debug */,
+				90801340DB97DA2D6643DE3ECC36F95F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2DAD1EAB19914150A528BB94A958CD1C /* Build configuration list for PBXNativeTarget "RevealingSplashView" */ = {
+		3152004D84A0AD8CB67C24CED97A0DFC /* Build configuration list for PBXNativeTarget "RAMAnimatedTabBarController" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C3D4D1CB157857F425F8CA4A71AF3706 /* Debug */,
-				DF369051159A33B253B3C7AC95AAC5AB /* Release */,
+				3B31513717707E84FD58D63AC05364D4 /* Debug */,
+				96D0A6CA2E08C9AF0234753691AA65AA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7CF33B98D4A1EB61580CD370D5468F4B /* Build configuration list for PBXNativeTarget "Pods-MAPD714-Calculator" */ = {
+		FB982BDD660EE8B8467093E4F22CD911 /* Build configuration list for PBXNativeTarget "Pods-MAPD714-Calculator" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				877BCC13C838A3EF685D44EBC97C5A86 /* Debug */,
-				F156C599B8B0C761289C31AA19FC8303 /* Release */,
+				C48497DAE1B223DDCFAAB2D65017A98E /* Debug */,
+				D6E4F5206DB7F5F07B57504B4E9917DF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

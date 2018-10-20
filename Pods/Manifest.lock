@@ -1,20 +1,24 @@
 PODS:
   - Pastel (0.5.1)
+  - RAMAnimatedTabBarController (4.0.1)
   - RevealingSplashView (0.5.0)
 
 DEPENDENCIES:
   - Pastel
+  - RAMAnimatedTabBarController
   - RevealingSplashView
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Pastel
+    - RAMAnimatedTabBarController
     - RevealingSplashView
 
 SPEC CHECKSUMS:
   Pastel: b3dd5b8d612dac06ae7c63c97c45c900829bc139
+  RAMAnimatedTabBarController: 677d6f7ec7e88b1089486f4db49b0a5067e8ad1c
   RevealingSplashView: 0794eecad3a8983ac11a1fe474e9a9b51b926780
 
-PODFILE CHECKSUM: edf72b9af6a50fce83a425781ee64622525e97ec
+PODFILE CHECKSUM: a4253c20b41c02074d81c85d559c4a8675507731
 
 COCOAPODS: 1.5.3

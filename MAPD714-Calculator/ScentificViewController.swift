@@ -1,16 +1,16 @@
 //
-//  ViewController.swift
+//  ScentificViewController.swift
 //  MAPD714-Calculator
 //
-//  Created by Matin Salehi on 2018-09-20.
+//  Created by Matin Salehi on 2018-10-20.
 //  Copyright © 2018 Matin Salehi. All rights reserved.
 //
 
 import UIKit
 import Pastel
-import RevealingSplashView
 
-class ViewController: UIViewController {
+class ScentificViewController: UIViewController {
+
     @IBOutlet weak var resultField: UILabel!
     @IBOutlet weak var equationField: UILabel!
     var firstOperand = ""
@@ -21,19 +21,12 @@ class ViewController: UIViewController {
     var secondFirstOperand = ""
     
     
-/*********************************************************************************************************/
+    /*********************************************************************************************************/
     override func viewDidLoad() {
         super.viewDidLoad()
         
         //Initialize Background Floating Gradient (Pastel)
         initializePastel()
-        //Initialize a revealing Splash
-        let revealingSplashView = RevealingSplashView(iconImage: UIImage(named: "appLogo")!,iconInitialSize: CGSize(width: 170, height: 170), backgroundColor: UIColor(red:156/255, green:39/255, blue:176/255, alpha:1.0))
-        //Adds the revealing splash view as a sub view
-        self.view.addSubview(revealingSplashView)
-        revealingSplashView.animationType = SplashAnimationType.popAndZoomOut
-        //Starts animation
-        revealingSplashView.startAnimation(){}
         
         resultField.text = "0"
     }
@@ -43,8 +36,8 @@ class ViewController: UIViewController {
         initializePastel()
     }
     
-/*  CASE1: NUMBER PRESSED ************************************************************
-    */
+    /*  CASE1: NUMBER PRESSED ************************************************************
+     */
     @IBAction func numbersPressed(_ sender: UIButton) {
         let number = sender.titleLabel?.text
         if firstOperand == "" {
@@ -65,15 +58,15 @@ class ViewController: UIViewController {
                 if isSecond {
                     secondOperand = secondOperand + number!
                 }
-                //first number is saved
+                    //first number is saved
                 else{
                     firstOperand = firstOperand + number!
                 }
-            //avoid pressing '.' anymore
+                //avoid pressing '.' anymore
             } else {
                 resultField.text = resultField.text!
             }
-        //regular number
+            //regular number
         } else {
             if(!isSecond){
                 firstOperand = firstOperand + number!
@@ -84,7 +77,7 @@ class ViewController: UIViewController {
         }
     }
     
-/*  CASE2: OPERATION PRESSED ************************************************************
+    /*  CASE2: OPERATION PRESSED ************************************************************
      */
     @IBAction func operationPressed(_ sender: UIButton) {
         let operation = sender.titleLabel?.text
@@ -96,6 +89,30 @@ class ViewController: UIViewController {
             secondOperand = ""
         case "+/-":
             resultField.text = String(-1 * Double(firstOperand)!)
+            firstOperand = resultField.text!
+            secondOperand = ""
+        case "sin":
+            resultField.text = String(__sinpi(Double(firstOperand)!/180.0))
+            firstOperand = resultField.text!
+            secondOperand = ""
+        case "cos":
+            resultField.text = String(__cospi(Double(firstOperand)!/180.0))
+            firstOperand = resultField.text!
+            secondOperand = ""
+        case "tan":
+            resultField.text = String(__tanpi(Double(firstOperand)!/180.0))
+            firstOperand = resultField.text!
+            secondOperand = ""
+        case "10^x":
+            resultField.text = String(pow(10, Double(firstOperand)!))
+            firstOperand = resultField.text!
+            secondOperand = ""
+        case "x^2":
+            resultField.text = String(pow(Double(firstOperand)!, 2))
+            firstOperand = resultField.text!
+            secondOperand = ""
+        case "x^3":
+            resultField.text = String(pow(Double(firstOperand)!, 3))
             firstOperand = resultField.text!
             secondOperand = ""
         default:
@@ -117,7 +134,7 @@ class ViewController: UIViewController {
         
     }
     
-/*  CASE3: EQUALS BUTTON PRESSED ************************************************************
+    /*  CASE3: EQUALS BUTTON PRESSED ************************************************************
      */
     @IBAction func calculatePress(_ sender: UIButton) {
         equationField.text = ""
@@ -150,11 +167,11 @@ class ViewController: UIViewController {
             } else {
                 secondOperand = secondFirstOperand
             }
-        
+            
         }
     }
     
-/*  CASE4: CLEAR PRESSED ************************************************************
+    /*  CASE4: CLEAR PRESSED ************************************************************
      */
     @IBAction func clearPressed(_ sender: UIButton) {
         equationField.text = ""
@@ -167,7 +184,7 @@ class ViewController: UIViewController {
         secondFirstOperand = ""
     }
     
-/*********************************************************************************************/
+    /*********************************************************************************************/
     func initializePastel() {
         let pastelView = PastelView(frame: CGRect(origin: CGPoint(x: 0, y: 0), size: CGSize(width: 1500, height: 1500)))
         
@@ -193,4 +210,3 @@ class ViewController: UIViewController {
     }
 
 }
-

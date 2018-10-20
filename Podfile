@@ -8,5 +8,6 @@ target 'MAPD714-Calculator' do
   # Pods for MAPD714-Calculator
 	pod "Pastel"
     pod "RevealingSplashView"
+    pod 'RAMAnimatedTabBarController'
 
 end
